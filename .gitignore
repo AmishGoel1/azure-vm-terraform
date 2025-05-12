@@ -40,4 +40,4 @@ terraform.rc
 .notes.md
 
 #Ignore all png 
-*.png
+image-2.png
