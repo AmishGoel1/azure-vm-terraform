@@ -185,8 +185,6 @@ rm ~/.ssh/keyname
 
 ## 📸 Screenshots
 
-> Replace with actual screenshots
-
 **Azure CLI installed**  
 ![Azure CLI Screenshot](image.png)
 
