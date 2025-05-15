@@ -86,7 +86,7 @@ resource "azurerm_network_security_group" "my_terraform_nsg" {
 resource "azurerm_network_security_group" "nsg_vm2" {
   name = "NSGVm2"
   location = azurerm_resource_group.rg_vm2.location
-  resource_group_name = azurerm_resource_group.rg_name_vm2.name
+  resource_group_name = azurerm_resource_group.rg_vm2.name
   security_rule {
     name                       = "SSH"
     priority                   = 1001
@@ -167,10 +167,10 @@ resource "azurerm_storage_account" "my_storage_account" {
 }
 
 resource "azurerm_storage_account" "storage_account_vm2" {
-  name = "diag${random_id.random_id_2.id}"
+  name = "diag${random_id.random_id_2.hex}"
   location = azurerm_resource_group.rg_vm2.location
   resource_group_name = azurerm_resource_group.rg_vm2.name
-  account_tier = "STANDARD"
+  account_tier = "Standard"
   account_replication_type = "LRS"
 }
 
